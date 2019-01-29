@@ -1,10 +1,7 @@
 import express from 'express';
+import MainController from '../controllers/MainController';
 
 const router = express.Router({ strict: false });
-
-const MainController = (req, res) => {
-	res.send('well hello there, world!');
-};
 
 router.get('/', MainController);
 
