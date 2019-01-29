@@ -1,6 +1,6 @@
 const merge = require('lodash/merge');
 const nodeExternals = require('webpack-node-externals');
-const colors = require('colors');
+const colors = require('colors'); // eslint-disable-line
 const webpackSharedConfig = require('./config');
 const getPlugins = require('./plugins');
 const isLocal = process.env.LOCAL === true || process.env.LOCAL === 'true';
